@@ -1,0 +1,36 @@
+<div class="main-w3layouts wrapper" style="height : 100vh">
+ {{> header}}
+ <h1>Sign Up</h1>
+ <div class="main-agileinfo">
+ <div class="agileits-top">
+ <div class='error'>{{error}}</div>
+ <div class='error' style="color : green;">{{success}}</div>
+ <form action="/signup" method="post">
+ <input class="text" type="text" name="user" placeholder="U
+sername" required="">
+ <input class="text email" type="email" name="email" placeh
+older="Email" required="">
+ <input class="text" type="password" name="password" placeh
+older="Password" required="">
+<input class="text w3lpass" type="password" name="con_pass
+word" placeholder="Confirm Password" required="">
+ <input type="submit" value="SIGN UP">
+ </form>
+ <p>Already have an Account? <a href="/signin"> Login Now!</a><
+/p>
+ </div>
+ </div>
+ <ul class="colorlib-bubbles">
+ <li></li>
+ <li></li>
+ <li></li>
+ <li></li>
+ <li></li>
+ <li></li>
+ <li></li>
+ <li></li>
+ <li></li>
+ <li></li>
+ </ul>
+ {{> footer}}
+ </div>
