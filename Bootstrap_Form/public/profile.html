@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Profile</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="styles.css">
+<!-- //Custom Theme files -->
+<!-- web font -->
+<link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+<!-- //web font -->
+</head>
+<body>
+	<!-- main -->
+	<div class="form-body">
+        <div class="row">
+            <div class="form-holder">
+                <div class="form-content">
+                    <div class="form-items">
+                        <h3>Create Profile</h3>
+                        <p>Fill in the data below.</p>
+                        <form class="requires-validation" action="/" method='post'>
+
+                            <div class="col-md-12">
+                               <input class="form-control" type="text" name="name" placeholder="Full Name" required>
+                               <div class="invalid-feedback">{%NAME_ERROR%}</div>
+                            </div>
+
+                            <div class="col-md-12 mt-5">
+                                <input class="form-control" type="email" name="email" placeholder="E-mail Address" required>
+                            </div>
+
+							<div class="col-md-12 mv-down">
+								<label class="mb-3 mr-1" for="gender">Gender: </label>
+	
+								<input type="radio" class="btn-check" name="gender" id="male" autocomplete="off" required>
+								<label class="btn btn-sm btn-outline-secondary" for="male">Male</label>
+	
+								<input type="radio" class="btn-check" name="gender" id="female" autocomplete="off" required>
+								<label class="btn btn-sm btn-outline-secondary" for="female">Female</label>
+	
+								<input type="radio" class="btn-check" name="gender" id="other" autocomplete="off" required>
+								<label class="btn btn-sm btn-outline-secondary" for="secret">Other</label>
+
+							</div>
+
+							<div class="col-md-12">
+                                <input class="form-control" type="text" name="mobile" placeholder="Mobile" required>
+								<div class="invalid-feedback">{%MOBILE_ERROR%}</div>
+                            </div>
+
+							<div class="col-md-12 mv-down">
+								<label class="mb-3 mr-1" for="dob">Date of Birth: </label>
+                                <input class="form-control" type="date" name="dob" placeholder="Date of Birth" required>
+                                <div class="invalid-feedback">{%DATE_ERROR%}</div>
+                            </div>
+
+							<div class="col-md-12 mv-down">
+								<textarea class="formcontrol" name="address" id="Textarea1" rows="3"  placeholder="Address" required></textarea>
+							</div>
+
+                           <div class="col-md-12 mv-up">
+                                <select class="form-select mt-3" describedby="institute" required>
+                                      <option selected disabled value="">Institute</option>
+                                      <option value="CSPIT">CSPIT</option>
+                                      <option value="DEPSTAR">DEPSTAR</option>
+                               </select>
+                           </div>
+
+						   <div class="col-md-12 mt-3">
+							<select class="form-select mt-3" describedby="department" required>
+								  <option selected disabled value="">DEPARTMENT</option>
+								  <option>CE</option>
+								  <option>IT</option>
+								  <option>CL</option>
+								  <option>ME</option>
+								  <option>EC</option>
+								  <option>CSE</option>
+						   </select>
+					   	   </div>
+
+							  <div class="col-md-12 mt-3">
+								<select class="form-select mt-3" describedby="semester" required>
+									  <option selected disabled value="">SEMESTER</option>
+									  <option>I</option>
+									  <option>II</option>
+									  <option>III</option>
+									  <option>IV</option>
+									  <option>V</option>
+									  <option>VI</option>
+									  <option>VII</option>
+									  <option>VIII</option>
+							   </select>
+							  </div>
+
+                            <div class="form-button mv-down">
+                                <button id="submit" type="submit" class="btn btn-primary">Register</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<!-- //main -->
+</body>
+</html>

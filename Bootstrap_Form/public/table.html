@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Table</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<link href="styles.css" rel="stylesheet" type="text/css" media="all" />
+<!-- //Custom Theme files -->
+<!-- web font -->
+<link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+<!-- //web font -->
+</head>
+
+<style>
+
+	body{
+		color: white;
+		font-size: 1.5rem;
+   	}
+
+	table,th,td{
+		border: 1px solid white;
+	}
+
+	td{
+		white-space: pre;
+	}
+
+</style>
+<body>
+	<!-- main -->
+
+	   	<div class="row justify-content-md-center">
+			<h1 style="text-align: center; margintop:5%">Created Profile</h1>
+	 	</div>
+	   	<div class="row justify-content-md-center">
+			<div class="col-md-6">
+	   			<table class="table" >
+					<tr>
+						<th scope="col">Full Name</th>
+						<td>{%NAME%}</td>
+					</tr>
+					<tr>
+						<th scope="col">Email</th>
+						<td>{%EMAIL%}</td>
+					</tr>
+					<tr>
+						<th scope="col">Mobile</th>
+	   					<td>{%MOBILE%}</td>
+					</tr>
+	   				<tr>
+						<th scope="col">Date of Birth</th>
+						<td>{%DOB%}</td>
+					</tr>
+	   				<tr>
+						<th scope="col">Gender</th>
+						<td>{%GENDER%}</td>
+					</tr>
+	   				<tr>
+						<th scope="col">Address</th>
+						<td>{%ADDRESS%}</td>
+					</tr>
+					<tr>
+						<th scope="col">Institute</th>
+						<td>{%INSTITUTE%}</td>
+					</tr>
+	   				<tr>
+						<th scope="col">Department</th>
+						<td>{%DEPARTMENT%}</td>
+					</tr>
+					<tr>
+						<th scope="col">Semester</th>
+						<td>{%SEMESTER%}</td>
+					</tr>
+				</table>
+	   		</div>
+	   </div>
+	<!-- //main -->
+</body>
+</html>
