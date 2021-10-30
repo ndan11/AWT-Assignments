@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    
+    <title>CRUD Operation using ExpressJS and Mysql</title>
+</head>
+<body>
+    
+    <main>
+        <h1> CRUD Operation Using ExpressJS and Mysql </h1>
+        <div>
+            <label>Course Id:</label>
+            <input type="text" id="course-id" ><br><br>
+            <label>Course Name:</label>
+            <input type="text" id="course-name" >
+            <br><br>
+            <div id="course-dept">
+                <label>Department: </label>
+                <input type="radio" name="deptName" value="CE"> CE
+                <input type="radio" name="deptName" value="IT"> IT
+                <input type="radio" name="deptName" value="CL"> CL
+                <input type="radio" name="deptName" value="ME"> ME
+                <input type="radio" name="deptName" value="CSE"> CSE
+                <input type="radio" name="deptName" value="EC"> EC
+            </div>
+            <br>
+            <div>
+                <label>Institute: </label>
+                <input type="checkbox" name="instituteName" value="CSPIT"> CSPIT
+                <input type="checkbox" name="instituteName" value="DEPSTAR"> DEPSTAR
+            </div>
+            <br>
+            <div> 
+                <label>University: </label>
+                <select id="course-uni">
+                    <option value="" disabled="disabled" selected="selected">Please select a university</option>
+                    <option value="Charotar University">Charotar University</option>
+                    <option value="Others">Others</option>
+                </select>
+            </div>
+        </div>
+        <button id="add-course-btn">Add Course</button>
+
+        <br><br><br>
+        <div>
+           <input placeholder="search by name" id="search-input">
+           <button id="search-btn">Search by User Name</button>
+        </div>
+
+        <table id="table">
+            <thead>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Institute</th>
+                <th>University</th>
+                <th>Delete</th>
+                <th>Edit</th>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <section hidden id="update-row">
+            <label>Course Id:</label>
+            <input type="text" id="update-course-id" ><br><br>
+            <label>Course Name:</label>
+            <input type="text" id="update-course-name" >
+            <br><br>
+            <div id="course-dept">
+                <label>Department: </label>
+                <input type="radio" name="update-deptName" value="CE"> CE
+                <input type="radio" name="update-deptName" value="IT"> IT
+                <input type="radio" name="update-deptName" value="CL"> CL
+                <input type="radio" name="update-deptName" value="ME"> ME
+                <input type="radio" name="update-deptName" value="CSE"> CSE
+                <input type="radio" name="update-deptName" value="EC"> EC
+            </div>
+            <br>
+            <div>
+                <label>Institute: </label>
+                <input type="checkbox" name="update-instituteName" value="CSPIT"> CSPIT
+                <input type="checkbox" name="update-instituteName" value="DEPSTAR"> DEPSTAR
+            </div>
+            <br>
+            <div> 
+                <label>University: </label>
+                <select id="update-course-uni">
+                    <option value="" disabled="disabled" selected="selected">Please select a university</option>
+                    <option value="Charotar University">Charotar University</option>
+                    <option value="Others">Others</option>
+                </select>
+            </div>
+            <button id="update-row-btn">Update</button>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
